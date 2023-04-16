@@ -1,0 +1,6 @@
+# Ignore Conda environment files
+env/
+.conda/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
