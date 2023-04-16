@@ -1,3 +1,15 @@
+# AI Starter Kit
+
+A template to prototype your AI/ML projects.
+
+You can follow the [setup instructions below](#setup) to clone and setup this template on your local machine and start working on the notebook.ipynb.
+
+Looking for inspiration? Check out [this AI / ML manual](https://github.com/tedcheng/ai-hackers-field-manual).
+
+## Contribute!
+Feel free to open PRs to add information / tools to benefit the entire community!
+
+
 # Project Name
 
 A short description of the project.
@@ -6,7 +18,7 @@ A short description of the project.
 
 - Python 3.10
 - Conda
-- Jupyter notebook (or extension in VS Code)
+- Jupyter notebook (or the Jupyter extension in VS Code)
 
 ## Setup
 
@@ -16,7 +28,7 @@ A short description of the project.
 2. Clone the repository:
    Clone the repository using the following command:
 
-   ```git clone https://github.com/username/project-name.git```
+   ```git@github.com:Ashwin27/ai-starter-kit.git```
 
 3. Create a new Conda environment:
    Open the terminal app and navigate to the project directory. Then, run the following command:
@@ -39,6 +51,12 @@ A short description of the project.
 
 - `notebook.ipynb`: A Jupyter notebook file containing the code for the project.
 - `requirements.txt`: A file containing a list of packages and their versions required for the project.
+
+Useful links on running Jupyter notebooks managed by Conda on VS Code:
+1. [Working with Jupyter notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+2. [Using Python environments with VS Code](https://code.visualstudio.com/docs/python/environments)
+
+A good alternative to running Jupyter notebooks locally is using [Google Collab](https://colab.research.google.com/).
 
 ## Adding and Removing Dependencies
 
