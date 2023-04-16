@@ -1,12 +1,16 @@
-# AI Starter Kit
+# AI Starter Kit (using Jupyter Notebooks)
 
-A template to prototype your AI/ML projects.
+A template to prototype your AI/ML projects using Jupyter Notebooks. 
+
+Jupyter notebooks simply Python development by:
+- allowing the execution of individual code snippets
+- allowing markdown alongside code for better documentation
 
 You can follow the [setup instructions below](#setup) to clone and setup this template on your local machine and start working on the notebook.ipynb.
 
 Looking for inspiration? Check out the examples folder in this project and/or [this AI / ML manual](https://github.com/tedcheng/ai-hackers-field-manual).
 
-## Contribute!
+## Contribute
 Feel free to open PRs to add information / tools to benefit the entire community!
 
 
