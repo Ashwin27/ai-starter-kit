@@ -58,59 +58,54 @@ Useful links on running Jupyter notebooks managed by Conda on VS Code:
 
 A good alternative to running Jupyter notebooks locally is using [Google Collab](https://colab.research.google.com/).
 
-## Adding and Removing Dependencies
-
-To add or remove dependencies in your Python project, you can use `pip` to install or uninstall packages.
+To add or remove dependencies in your Python project while keeping the `environment.yml` file up-to-date, you can use Conda to install or uninstall packages.
 
 ### Adding Dependencies
 
 To add a new dependency to your project, you can use the following command:
 
 ```
-pip install <package-name>
+conda install <package-name>
 ```
 
 Replace `<package-name>` with the name of the package you want to install. If you want to install a specific version of the package, you can use the following command:
 
 ```
-pip install <package-name>==<version>
+conda install <package-name>=<version>
 ```
 
 Replace `<version>` with the specific version you want to install.
 
-After installing a new package, you should update the `requirements.txt` file to include the new package and its version. You can do this by running the following command:
+After installing a new package, you should update the `environment.yml` file to include the new package and its version. You can do this by running the following command:
 
 ```
-pip freeze > requirements.txt
+conda env export --name myenv > environment.yml
 ```
 
-This will generate a new `requirements.txt` file that includes all the installed packages and their versions.
+This will generate a new `environment.yml` file that includes all the installed packages and their versions in the specified Conda environment.
 
 ### Removing Dependencies
 
 To remove a dependency from your project, you can use the following command:
 
 ```
-pip uninstall <package-name>
+conda remove <package-name>
 ```
 
 Replace `<package-name>` with the name of the package you want to uninstall. If you want to uninstall a specific version of the package, you can use the following command:
 
 ```
-pip uninstall <package-name>==<version>
+conda remove <package-name>=<version>
 ```
 
-Replace `<version>` with the specific version you want to uninstall.
-
-After uninstalling a package, you should also update the `requirements.txt` file to remove the package from the list of installed packages. You can do this by manually editing the `requirements.txt` file to remove the package and its version, or by regenerating the file using the `pip freeze` command (which will include only the remaining installed packages):
+After removing a package, you should update the `environment.yml` file to remove the package and its version. You can do this by running the same command to export the environment as before:
 
 ```
-pip freeze > requirements.txt
+conda env export --name myenv > environment.yml
 ```
 
-This will generate a new `requirements.txt` file that includes only the remaining installed packages and their versions.
+This will generate a new `environment.yml` file that includes all the remaining installed packages and their versions in the specified Conda environment.
 
-That's it! You now know how to add and remove dependencies in your Python project using `pip`.
 
 
 ## License

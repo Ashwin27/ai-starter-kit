@@ -4,3 +4,6 @@ env/
 
 # Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
+
+# Other
+.env
