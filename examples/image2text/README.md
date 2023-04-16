@@ -1,6 +1,18 @@
 # Image to Text generation
 
-🚧 Coming soon.
+🚧 In Progress 🚧
+
+Embeddings are representations of complex objects that enable ML operations such as similarity detection between the objects.
+
+This project converts images into text embeddings to enable higher order operations such as image search using text.
+
+There are multiple ways of generating text from images depending on the image:
+1. **for OCR usecases:** using Llama-Index's Image loader
+2. [🚧 In Progress 🚧] **for image description usecases:** using CLIP by OpenAI (the model that powers DALLE)
+
+### Tools explored in this project:
+1. [CLIP by OpenAI](https://openai.com/research/clip)
+2. [Llama-Index](https://github.com/jerryjliu/llama_index)
 
 ## Requirements
 
@@ -94,8 +106,6 @@ conda env export --name myenv > environment.yml
 
 This will generate a new `environment.yml` file that includes all the remaining installed packages and their versions in the specified Conda environment.
 
-
-
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
@@ -105,3 +115,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 - List any credits or acknowledgements here.
 
 Note: Please make sure that the packages listed in the `requirements.txt` file are compatible with Python 3.10 before running the `setup.sh` file.
+
+## References
+1. https://towardsdatascience.com/quick-fire-guide-to-multi-modal-ml-with-openais-clip-2dad7e398ac0
