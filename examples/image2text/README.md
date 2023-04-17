@@ -1,18 +1,19 @@
-# Image to Text generation
-
+# Image to Text Embeddings 
 🚧 In Progress 🚧
-
-Embeddings are representations of complex objects that enable ML operations such as similarity detection between the objects.
 
 This project converts images into text embeddings to enable higher order operations such as image search using text.
 
+Embeddings are representations of complex objects that enable ML operations such as similarity detection between the objects.
+
 There are multiple ways of generating text from images depending on the image:
 1. **for OCR usecases:** using Llama-Index's Image loader
-2. [🚧 In Progress 🚧] **for image description usecases:** using CLIP by OpenAI (the model that powers DALLE)
+2. [🚧 In Progress 🚧] **for image description usecases:** using captioning models (eg. https://huggingface.co/nlpconnect/vit-gpt2-image-captioning or [CLIP by OpenAI](https://openai.com/research/clip) (the model that powers DALLE)
 
-### Tools explored in this project:
+### Tools:
 1. [CLIP by OpenAI](https://openai.com/research/clip)
 2. [Llama-Index](https://github.com/jerryjliu/llama_index)
+3. [HuggingFace Models](https://huggingface.co/nlpconnect/vit-gpt2-image-captioning)
+4. [CLIP Prefix Caption](https://replicate.com/rmokady/clip_prefix_caption/examples)
 
 ## Requirements
 
@@ -117,4 +118,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 Note: Please make sure that the packages listed in the `requirements.txt` file are compatible with Python 3.10 before running the `setup.sh` file.
 
 ## References
-1. https://towardsdatascience.com/quick-fire-guide-to-multi-modal-ml-with-openais-clip-2dad7e398ac0
+1. https://huggingface.co/models?pipeline_tag=image-to-text
+2. https://towardsdatascience.com/quick-fire-guide-to-multi-modal-ml-with-openais-clip-2dad7e398ac0
+3. https://replicate.com/rmokady/clip_prefix_caption/examples
